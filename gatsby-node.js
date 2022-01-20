@@ -122,9 +122,8 @@ exports.createPages = async ({ actions, graphql }) => {
   const caseStudies = await getFolderEdges('case-study', graphql)
   caseStudies.forEach((edge) => createPageFromEdge(edge, createPage))
 
-  // TODO Temporarily hiding until it is released in production
-  /*   const solutions = await getFolderEdges('solutions/solutions', graphql, 'frontmatter: { isPublished: { ne: false } }')
-  solutions.forEach((edge) => createPageFromEdge(edge, createPage)) */
+  const solutions = await getFolderEdges('solutions/solutions', graphql, 'frontmatter: { isPublished: { ne: false } }')
+  solutions.forEach((edge) => createPageFromEdge(edge, createPage))
 
   const featuredPosts = await getFolderEdges('blog', graphql, 'frontmatter: { featured: { eq: true } }')
 

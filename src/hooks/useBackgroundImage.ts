@@ -6,7 +6,7 @@ export function useMainBackgroundImage() {
       {
         mainBackground: file(relativePath: { eq: "bg-full.png" }) {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF], quality: 90, layout: FULL_WIDTH)
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO], quality: 90, layout: FULL_WIDTH)
           }
         }
       }

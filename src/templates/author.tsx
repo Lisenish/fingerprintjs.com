@@ -79,7 +79,7 @@ export const pageQuery = graphql`
         role
         photo {
           childImageSharp {
-            gatsbyImageData(width: 128,height: 128, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 128,height: 128, placeholder: BLURRED, formats: [AUTO])
           }
         }
       }

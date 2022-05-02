@@ -109,7 +109,7 @@
     "babel-loader": "8.2.3",
     "babel-plugin-inline-react-svg": "2.0.1",
     "babel-plugin-prismjs": "2.1.0",
-    "babel-preset-gatsby": "2.6.0",
+    "babel-preset-gatsby": "2.13.0",
     "babel-preset-react-app": "10.0.1",
     "bundlewatch": "0.3.3",
     "chromatic": "6.4.3",
